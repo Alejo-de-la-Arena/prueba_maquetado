@@ -1,0 +1,353 @@
+:root {
+    --primary-blue: #0047BB;
+    --primary-green: #0fe65d;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #F5F5F5;
+    --text-dark: #3E3E52;
+    --text-light: #707070;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--white);
+    box-shadow: 0 2px 10px var(--shadow);
+    height: 80px;
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+.header-logo{
+    height: 50px;
+    width: auto;
+}
+
+.header-logo-desktop{
+    display: none;
+}
+
+#header button {
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 40%;
+}
+
+
+.hero {
+    height: 60vh; 
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    background: url("../assets/img/Hero-IMG.jpg") center/cover no-repeat;
+    background-size: cover;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+    width: auto;
+}
+
+.hero-logo-desktop{
+    display: none;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header-visible {
+    top: 0;
+    opacity: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+}
+
+.whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: var(--primary-green); 
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 70%;
+}
+
+.bxl-whatsapp{
+    font-size: larger;
+}
+
+form{
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select, input {
+    padding: 10px;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+}
+
+select:hover, input:hover{
+    border: 1px solid var(--primary-blue);
+}
+
+.btn-next {
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.insurance {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: var(--primary-blue);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.insurance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.insurance-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.icon-wrapper {
+    width: 80px; 
+    height: 80px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper i {
+    font-size: 40px;
+    color: var(--primary-blue);
+}
+
+.insurance-item p {
+    color: var(--text-dark);
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.insurance-plans {
+    background-color: var(--gray);
+}
+
+.insurance-plans h3{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.insurance-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.plan-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px var(--text-light);
+    padding: 20px;
+    width: 80%;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.plan-card h4{
+    color: var(--primary-blue);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+
+.plan-card ul {
+    padding-left: 20px;
+    color: var(--text-dark);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.plan-card ul li {
+    margin-bottom: 5px;
+}
+
+.quote-btn {
+    display: block;
+    width: 70%;
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.quote-btn:hover {
+    background-color: #1538AA;
+}
+
+:root {
+    --primary-blue: #0A3D91;
+    --text-white: #FFFFFF;
+    --text-light: #E0E0E0;
+    --border-light: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+    background: var(--primary-blue);
+    color: var(--text-white);
+    text-align: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.footer-wrapper{
+    flex-direction: column;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-info strong {
+    font-size: 16px;
+}
+
+.footer-info a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--white);
+    margin: 15px 0;
+    width: 70%;
+}
+
+.footer-logo {
+    margin-top: 10px;
+}
+
+.footer-logo img {
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.footer-text {
+    text-align: left;
+    font-size: 12px;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.footer-text a {
+    color: var(--text-white);
+    font-weight: bold;
+}

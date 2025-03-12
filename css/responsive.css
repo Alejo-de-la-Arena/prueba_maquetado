@@ -1,0 +1,173 @@
+/* Pantallas medianas (tablets) */
+@media screen and (min-width: 768px) {
+    .hero-content {
+        font-size: 10rem;
+    }
+
+    .quote {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* Pantallas grandes (escritorio) */
+@media screen and (min-width: 1024px) {
+
+    #header {
+        width: 90%;
+        height: 100px;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-logo-desktop {
+        height: 100px;
+        display: block;
+    }
+
+    #header button {
+        width: 200px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 105vh;
+    }
+
+    .hero-logo {
+        display: none;
+        margin-left: 20px;
+    }
+
+    .hero-logo-desktop {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        height: 100px;
+        width: auto;
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        width: 50%;
+        text-align: left;
+    }
+
+    .hero-content {
+        font-size: 2.5rem;
+    }
+
+    .quote {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .form {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        z-index: 10;
+        padding: 25px;
+    }
+
+    .insurance {
+        height: 300px;
+    }
+
+    .insurance h3 {
+        font-size: 25px;
+    }
+
+    .insurance-grid {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .insurance-plans{
+        height: 600px;
+    }
+
+    .insurance-plans h3{
+        font-size: 25px;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .insurance-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .plan-card {
+        height: 300px;
+        width: 230px;
+    }
+
+    .plan-card:nth-child(1) .quote-btn {
+        margin-top: 80px;
+    }
+
+    .plan-card:nth-child(2) .quote-btn {
+        margin-top: 80px;
+    }
+
+    .plan-card:nth-child(3) .quote-btn{
+        margin-top: 22px;
+    }
+
+    .plan-card:nth-child(4) .quote-btn {
+        margin-top: 60px;
+    }
+
+    .footer-content{
+        max-width: 90%;
+        margin: 20px;
+    }
+
+    .footer-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-info{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    hr {
+        border: none;
+        border-left: 1px solid var(--white);
+        width: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 80px;
+    }
+
+    .footer-logo{
+        margin-left: 10px;
+    }
+
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .footer-text{
+        margin-top: 15px;
+    }
+
+    .footer-text-wrapper{
+        justify-content: flex-start;
+    }
+
+}
