@@ -13,7 +13,12 @@
 /* Pantallas grandes (escritorio) */
 @media screen and (min-width: 1024px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     #header {
+        overflow-x: hidden;
         height: 100px;
         justify-content: space-between;
         padding-left: 30px;
