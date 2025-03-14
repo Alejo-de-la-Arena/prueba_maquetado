@@ -1,5 +1,6 @@
 :root {
     --primary-blue: #0047BB;
+    --secondary-blue: #214fd9;
     --primary-green: #0fe65d;
     --white: #FFFFFF;
     --black: #000000;
@@ -40,7 +41,7 @@ body {
 }
 
 #header button {
-    background: var(--primary-blue);
+    background: var(--secondary-blue);
     color: var(--white);
     border: none;
     padding: 12px 15px;
@@ -163,7 +164,7 @@ select:hover, input:hover{
 }
 
 .btn-next {
-    background: var(--primary-blue);
+    background: var(--secondary-blue);
     color: var(--white);
     border: none;
     padding: 15px 25px;
@@ -277,7 +278,7 @@ h3 {
 .quote-btn {
     display: block;
     width: 70%;
-    background-color: var(--primary-blue);
+    background-color: var(--secondary-blue);
     color: white;
     font-size: 16px;
     font-weight: bold;
